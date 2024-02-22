@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav_parent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 10px 12px -9px rgba(0,0,0,0.75);
+}
+
+.nav_child1 img {
+    width: 15vw;
+    padding-left: 0.8rem;
+    padding-inline: 0.8rem;
+}
+
+.nav_child2 ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2rem;
+    padding-right: 2rem;
+}
+
+.nav_child2 ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #3b1f6c;
+    font-weight: 600;
+}
+
+.nav_child_burger {
+    display: none;
+}
+
+.menu_list {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+}
+
+.hero_parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_picture {
+    position: relative;
+}
+
+.hero_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #0f0f2e;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.hero_text h2{
+    margin-bottom: 20px;
+}
+
+.hero_parent img{
+    width: 100%;
+    min-height: 250px;
+    object-position: center;
+}
+
+.main-content {
+    margin-inline: 5%;
+}
+
+.main-content_parent {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-content_parent img{
+    width: 90%;
+}
+
+.main_child1 h3 {
+    color: #3b1f6c;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin-block: 1.5rem;
+}
+
+.ring {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.ring img{
+    width: 80px;
+    margin-right: 20px;
+}
+
+.pp{
+    font-size: 1.3rem;
+}
+
+.ring span {
+    color: #5e2b9d;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.menu_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.menu_list.active {
+    display: block;
+    transform: translateX(0);
+}
+
+.active {
+    display: none;
+}
+
+.times {
+    font-size: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.para{
+    margin-top: 2rem;
+}
+
+.para p{
+    color: #51514F;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 2rem;
+}
+
+.para h3{
+    margin-bottom: 2rem;
+    color: #51514F;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.service{
+    border-bottom: 1px solid #51514F;
+}
+
+.service h3{
+    color: #51514F;
+    margin-bottom: 2rem;
+}
+
+.service_child h4{
+    color: #51514F;
+    margin-bottom: 2.2rem;
+}
+
+.service_level{
+    line-height: 32px;
+    word-spacing: 2px;
+}
+
+.service_child ol{
+    margin-left: 2.5rem;
+}
+
+.service_child ol>li{
+    color: #51514F;
+    margin-block: 0.8rem;
+    font-weight: 600;
+}
+
+.service_child ul>li{
+    margin-left: 1rem;
+    line-height: 32px;
+    font-size: 15px;
+    color: #51514F;
+    list-style: disc;
+}
+
+#level{
+    margin-top: 2rem;
+}
+
+.complain p{
+    color: #51514F;
+    line-height: 32px;
+    margin-block: 2rem;
+}
+
+.logo img{
+    width: 9rem;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.mobile_view{
+    display: none;
+
+}
+
+.table_content table{
+    text-align: left;
+}
+
+.table_content table>thead th{
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+}
+
+.table_content table>tbody td{
+    padding-bottom: 16px;
+    color: #51514F;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.table_content table>tbody td:hover{
+    cursor: pointer;
+    color: #6739b7;
+}
+
+.certi{
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.certi_mobile{
+    display: none;
+}
+
+.bottom_mobile{
+    display: none;
+}
+
+.certi img{
+    width: 120px;
+    margin-block: 1rem;
+}
+
+.icon_logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.icon_logo img{
+    width: 40px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.last{
+    margin-block: 3rem;
+    text-align: center;
+    color: #51514F;
+    font-size: 17px;
+}
+
+
+@media screen and (max-width:520px) {
+    .menu_overlay.active {
+        display: block;
+    }
+    
+    .nav_child1 img {
+        width: 40vw;
+    }
+    .nav_child2 {
+        display: none;
+    }
+    .nav_child_burger {
+        display: block;
+    }
+    .nav_child_burger img {
+        width: 40px;
+        height: 40px;
+        padding-right: 2rem;
+        align-self: center;
+        cursor: pointer;
+    }
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding-top: 2rem;
+        position: relative;
+    }
+    .list ul {
+        list-style: none;
+    }
+    .list li{
+        margin-bottom: 20px;
+    }
+    .list li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #5e2b9d;
+    }
+    .menu_list.active {
+        display: block;
+        transform: translateX(0);
+    }
+    .active {
+        display: none;
+    }
+
+    .times{
+        font-size: 3rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .footer{
+        flex-direction: column;
+        padding-inline: 1.5rem;
+    }
+
+    .mobile_view{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .table_content{
+        display: none;
+    }
+
+    .icon_logo{
+        display: none;
+    }
+
+    .business_child{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .business_child h3{
+        cursor: pointer;
+    }
+
+    .business_child button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .business_child button>img{
+        width: 20px;
+    }
+
+    .payget{
+        display: none;
+        flex-direction: column;
+        gap: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+    .payget p{
+        color: #51514F;
+        cursor: pointer;
+    }
+    .payget p:hover{
+        color: #6739b7;
+    }
+
+    .certi{
+        display: none;
+    }
+
+    .certi_mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .certi_mobile h3:hover{
+        cursor: pointer;
+        color: #5e2b9d;
+    }
+
+    .certi_mobile img{
+        width: 100px;
+        height: 60px;
+    }
+
+    .bottom_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .mobile_icon img{
+        margin-top: 1.5rem;
+        width: 40px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .footer{
+        flex-direction: column;
+        padding-inline: 1.5rem;
+    }
+
+    .mobile_view{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .table_content{
+        display: none;
+    }
+
+    .icon_logo{
+        display: none;
+    }
+
+    .business_child{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .business_child h3{
+        cursor: pointer;
+    }
+
+    .business_child button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .business_child button>img{
+        width: 20px;
+    }
+
+    .payget{
+        display: none;
+        flex-direction: column;
+        gap: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+    .payget p{
+        color: #51514F;
+        cursor: pointer;
+    }
+    .payget p:hover{
+        color: #6739b7;
+    }
+
+    .certi{
+        display: none;
+    }
+
+    .certi_mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .certi_mobile h3:hover{
+        cursor: pointer;
+        color: #5e2b9d;
+    }
+
+    .certi_mobile img{
+        width: 100px;
+        height: 60px;
+    }
+
+    .bottom_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .mobile_icon img{
+        margin-top: 1.5rem;
+        width: 40px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
