@@ -132,16 +132,13 @@
     font-size: 1.3rem;
 }
 
-.ring a{
-    text-decoration:none;
-}
-
 .ring a> span {
     color: #5e2b9d;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 26px;
+    text-decoration:none;
 }
 
 .menu_overlay {
@@ -241,11 +238,14 @@
     margin-block: 2rem;
 }
 
-.complain p>a{
-    text-decoration:none;
+.complain p>a {
     cursor: pointer;
     font-weight:600;
     color:black;
+}
+
+.complain p>a>span{
+    text-decoration:none;
 }
 
 .logo img{
