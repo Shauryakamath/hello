@@ -132,7 +132,11 @@
     font-size: 1.3rem;
 }
 
-.ring span {
+.ring a{
+    text-decoration:none;
+}
+
+.ring a> span {
     color: #5e2b9d;
     cursor: pointer;
     font-size: 1.5rem;
@@ -235,6 +239,12 @@
     color: #51514F;
     line-height: 32px;
     margin-block: 2rem;
+}
+
+.complain p>a{
+    text-decoration:none;
+    cursor: pointer;
+    font-weight:600;
 }
 
 .logo img{
